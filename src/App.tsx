@@ -1,11 +1,11 @@
-import { Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout'
-import Dashboard from './pages/Dashboard'
-import Zones from './pages/Zones'
-import ZoneForm from './pages/ZoneForm'
-import ZoneDetail from './pages/ZoneDetail'
-import ImportExport from './pages/ImportExport'
-import Settings from './pages/Settings'
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Dashboard from "./pages/Dashboard";
+import Zones from "./pages/Zones";
+import ZoneForm from "./pages/ZoneForm";
+import ZoneDetail from "./pages/ZoneDetail";
+import ImportExport from "./pages/ImportExport";
+import Settings from "./pages/Settings";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="/settings" element={<Settings />} />
       </Routes>
     </Layout>
-  )
+  );
 }
 
-export default App
+export default App;

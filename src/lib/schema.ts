@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 // 基础验证器
-const domainName = z
+export const domainNameSchema = z
   .string()
   .min(1, "Domain name is required")
   .max(253, "Domain name is too long")
@@ -11,6 +11,8 @@ const domainName = z
     /^[a-zA-Z0-9_/]([a-zA-Z0-9_/.-]{0,251}[a-zA-Z0-9_/])?$/,
     "Invalid domain name format"
   );
+
+const domainName = domainNameSchema;
 
 const ipv4Address = z
   .string()
