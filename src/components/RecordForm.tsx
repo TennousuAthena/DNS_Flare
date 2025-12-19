@@ -205,6 +205,11 @@ export default function RecordForm({
                   {...register("data.preference")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.preference && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.preference.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-4">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -215,6 +220,11 @@ export default function RecordForm({
                   {...register("data.exchange")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.exchange && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.exchange.message}
+                  </p>
+                )}
               </div>
             </>
           )}
@@ -229,6 +239,11 @@ export default function RecordForm({
                 rows={3}
                 className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
+              {errorData?.txts && (
+                <p className="text-red-500 text-xs mt-1">
+                  {errorData.txts.message}
+                </p>
+              )}
               <p className="mt-1 text-xs text-gray-500">
                 For multiple strings, validation might need adjustment or UI to
                 handle array input.
@@ -247,6 +262,11 @@ export default function RecordForm({
                   {...register("data.priority")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.priority && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.priority.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -257,6 +277,11 @@ export default function RecordForm({
                   {...register("data.weight")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.weight && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.weight.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -267,6 +292,11 @@ export default function RecordForm({
                   {...register("data.port")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.port && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.port.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-6">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -277,6 +307,11 @@ export default function RecordForm({
                   {...register("data.target")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.target && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.target.message}
+                  </p>
+                )}
               </div>
             </>
           )}
@@ -292,6 +327,11 @@ export default function RecordForm({
                   {...register("data.mname")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.mname && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.mname.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-3">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -302,6 +342,11 @@ export default function RecordForm({
                   {...register("data.rname")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.rname && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.rname.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -312,6 +357,11 @@ export default function RecordForm({
                   {...register("data.serial")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.serial && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.serial.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -322,6 +372,11 @@ export default function RecordForm({
                   {...register("data.refresh")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.refresh && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.refresh.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -332,6 +387,11 @@ export default function RecordForm({
                   {...register("data.retry")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.retry && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.retry.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -342,6 +402,11 @@ export default function RecordForm({
                   {...register("data.expire")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.expire && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.expire.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -352,6 +417,11 @@ export default function RecordForm({
                   {...register("data.minimum")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.minimum && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.minimum.message}
+                  </p>
+                )}
               </div>
             </>
           )}
@@ -367,6 +437,11 @@ export default function RecordForm({
                   {...register("data.flags")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.flags && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.flags.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -380,6 +455,11 @@ export default function RecordForm({
                   <option value="issuewild">issuewild</option>
                   <option value="iodef">iodef</option>
                 </select>
+                {errorData?.tag && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.tag.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-4">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -390,6 +470,11 @@ export default function RecordForm({
                   {...register("data.value")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.value && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.value.message}
+                  </p>
+                )}
               </div>
             </>
           )}
@@ -406,6 +491,11 @@ export default function RecordForm({
                   {...register("data.flags")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.flags && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.flags.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -417,6 +507,11 @@ export default function RecordForm({
                   defaultValue={3}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.protocol && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.protocol.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -427,6 +522,11 @@ export default function RecordForm({
                   {...register("data.alg")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.alg && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.alg.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-6">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -437,6 +537,11 @@ export default function RecordForm({
                   rows={3}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.public_key && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.public_key.message}
+                  </p>
+                )}
               </div>
             </>
           )}
@@ -452,6 +557,11 @@ export default function RecordForm({
                   {...register("data.keytag")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.keytag && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.keytag.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -462,6 +572,11 @@ export default function RecordForm({
                   {...register("data.alg")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.alg && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.alg.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -472,6 +587,11 @@ export default function RecordForm({
                   {...register("data.digest_type")}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.digest_type && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.digest_type.message}
+                  </p>
+                )}
               </div>
               <div className="sm:col-span-6">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
@@ -482,6 +602,11 @@ export default function RecordForm({
                   rows={2}
                   className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                {errorData?.digest && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errorData.digest.message}
+                  </p>
+                )}
               </div>
             </>
           )}
